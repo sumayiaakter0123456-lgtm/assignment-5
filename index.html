@@ -5,9 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Issues Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+        <div class=" w-full max-w-[520px] bg-white rounded-lg p-10
+        shadow-sm">
+
+            <div class="flex flex-col items-center mb-[32px]">
+                <div class="mb-[24px]">
+                    <img src="./assets/github-logo.png" alt="">
+                </div>
+                <h1 class="text-[24px] font-semibold text-slate-800 tracking-tight">GitHub Issues Tracker</h1>
+                <p class="text-[#64748B] text-[16px] mt-[4px] font-normal">Sign in to manage your issues</p>
+            </div>
+
+            <form class="space-y-5">
+                <div class="form-control w-full">
+                    <label class="label pt-0 pb-2">
+                        <span class="label-text font-medium text-slate-700 text-[16px]">Username</span>
+                    </label>
+                    <input type="text" placeholder="Enter Username"
+                        class="input input-bordered w-full h-12 bg-white font-normal  focus:outline-blue-500 rounded-lg text-[#64748B] border-slate-200" />
+                    <span class="text-[14px] text-[#4A00FF] mt-[6px] font-normal">Default: admin</span>
+                </div>
+
+                <div class="form-control w-full">
+                    <label class="label gap-[16px]">
+                        <span class="label-text font-medium mb-[8px] text-slate-700 text-[16px]">Password</span>
+                    </label>
+                    <input type="password" placeholder="Enter Password"
+                        class="input input-bordered w-full h-12 bg-white focus:outline-blue-500 rounded-lg text-slate-600 border-slate-200" />
+                    <span class="text-[14px] text-[#4A00FF] mt-[6px] font-normal">Default: admin123</span>
+                </div>
+
+                <button
+                    class="btn btn-primary w-full h-12 bg-[#4A00FFS] hover:bg-[#3D0CD1] border-none text-white text-[16px] font-normal rounded-lg">
+                    Sign In
+                </button>
+            </form>
+
+            <div
+                class="divider before:bg-[#E4E4E7] after:bg-[#E4E4E7] text-slate-700 text-[16px] font-normal my-[24px]">
+                OR
+            </div>
+
+            <div class="text-center">
+                <p class="text-[#64748B] font-normal text-[14px] mb-[8px]">Demo Credentials:</p>
+                <div class="bg-slate-50 border border-slate-100 rounded-lg p-[24px]">
+                    <p class="text-slate-700 font-normal text-[16px]">
+                        <span class="font-medium">Username:</span> admin
+                    </p>
+                    <p class="text-slate-700 font-normal text-[16px] mt-1">
+                        <span class="font-medium">Password:</span> admin123
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
