@@ -35,7 +35,7 @@
                     <label class="label pt-0 pb-2">
                         <span class="label-text font-medium text-slate-700 text-[16px]">Username</span>
                     </label>
-                    <input type="text" placeholder="Enter Username"
+                    <input id="input-username" type="text" placeholder="Enter Username"
                         class="input input-bordered w-full h-12 bg-white font-normal  focus:outline-blue-500 rounded-lg text-[#64748B] border-slate-200" />
                     <span class="text-[14px] text-[#4A00FF] mt-[6px] font-normal">Default: admin</span>
                 </div>
@@ -44,13 +44,13 @@
                     <label class="label gap-[16px]">
                         <span class="label-text font-medium mb-[8px] text-slate-700 text-[16px]">Password</span>
                     </label>
-                    <input type="password" placeholder="Enter Password"
+                    <input id="input-password" type="password" placeholder="Enter Password"
                         class="input input-bordered w-full h-12 bg-white focus:outline-blue-500 rounded-lg text-slate-600 border-slate-200" />
                     <span class="text-[14px] text-[#4A00FF] mt-[6px] font-normal">Default: admin123</span>
                 </div>
 
-                <button
-                    class="btn btn-primary w-full h-12 bg-[#4A00FFS] hover:bg-[#3D0CD1] border-none text-white text-[16px] font-normal rounded-lg">
+                <button type="button" id="sign-in-btn"
+                    class="btn btn-primary w-full h-12 bg-[#4A00FF] hover:bg-[#3D0CD1] border-none text-white text-[16px] font-normal rounded-lg">
                     Sign In
                 </button>
             </form>
@@ -74,7 +74,7 @@
 
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
