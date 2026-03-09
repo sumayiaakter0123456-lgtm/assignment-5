@@ -43,7 +43,7 @@
     </nav>
 
     <!-- Main Container -->
-    <div class="w-[80%] bg-white shadow mx-auto mt-[60px] mb-[16px] p-[24px] ">
+    <div class="w-[80%] rounded-lg bg-white shadow mx-auto mt-[60px] mb-[16px] p-[24px] ">
 
         <!-- Tabs -->
         <div class="flex gap-[8px]">
@@ -57,19 +57,58 @@
                 class="w-full sm:w-auto bg-white border border-gray-200 px-10 py-2 rounded-[4px] font-medium text-[16px] text-[#64748B]"
                 data-status="closed">Closed</button>
         </div>
+    </div>
 
-        <!-- Issue Count -->
+    <!-- Issue Count -->
+    <div class="bg-white rounded-lg shadow w-[80%] mx-auto p-[24px] flex justify-between items-center mt-[16px]">
 
+        <div class="flex items-center gap-[8px]">
+            <div class="bg-[#ECE4FF] p-3 rounded-full flex items-center justify-center w-[52px] h-[52px]">
+                <img src="./assets/Aperture.png" alt="">
+            </div>
 
-
-        <!-- Loading Spinner -->
-        <div id="loader" class="flex justify-center my-10 hidden">
-            <span class="loading loading-spinner loading-lg text-primary"></span>
+            <div>
+                <h2 class="text-[20px] font-bold text-slate-800 leading-tight">
+                    <span id="issueCount">50</span> Issues
+                </h2>
+                <p class="text-[16px] font-normal text-[#64748B]">
+                    Track and manage your project issues
+                </p>
+            </div>
         </div>
 
-        <!-- Issues Grid -->
-        <div id="issuesContainer" class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="flex gap-[16px] text-[16px] font-medium text-slate-700">
+            <div class="flex items-center gap-[8px]">
+                <span class="w-3 h-3 bg-[#22C55E] rounded-full"></span>
+                <span>Open</span>
+            </div>
+
+            <div class=" flex items-center gap-[8px]">
+                <span class="w-3 h-3 bg-[#A855F7] rounded-full"></span>
+                <span>Closed</span>
+            </div>
         </div>
+    </div>
+
+
+    <div id="loader" class="flex justify-center my-10 hidden">
+        <span class="loading loading-spinner loading-lg text-[#4A00FF]"></span>
+    </div>
+    </div>
+
+    <div id="issue-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+    </div>
+
+
+
+    <!-- Loading Spinner -->
+    <div id="loader" class="flex justify-center my-10 hidden">
+        <span class="loading loading-spinner loading-lg text-primary"></span>
+    </div>
+
+    <!-- Issues Grid -->
+    <div id="issuesContainer" class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    </div>
 
     </div>
 
